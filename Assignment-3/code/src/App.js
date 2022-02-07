@@ -6,7 +6,7 @@ import './App.css';
 var arrow={
   name:"Mainkandan P",
   employeeId:123456,
-  appointment:"9:00 (06/03/2022)",
+  Appointment:"9:00 (06/03/2022)",
   email:"manimass@gmail.com",
   phone:+90983873468,
   image:'https://www.w3schools.com/howto/img_avatar.png'
@@ -23,7 +23,7 @@ function App() {
       <button className='btn'>print</button>
     </header>
     <section className='customer-info'>
-      <p><b>Appointment :</b> {arrow.appointment}</p>
+      <p><b>Appointment On:</b> {arrow.Appointment}</p>
       <p><b>Email :</b> {arrow.email}</p>
       <p><b>Phone :</b> {arrow.phone}</p>
     </section>
