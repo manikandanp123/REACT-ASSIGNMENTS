@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+/*  -------------- custom edit----------*/
+h1 {
+  color: blue;
+  /* text-align: left; */
+}
+.bright {
+  font-weight:bold;
+}
+.container {
+  text-align: center;
+}
+img {
+  margin-top: 50px;
+  width:200px;
+  height:200px;
+  border-radius: 10%;
+}
+.inner {
+  text-align: left;
+  margin-left: 42%;
+}
