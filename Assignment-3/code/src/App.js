@@ -3,11 +3,58 @@ import logo from './logo.svg';
 import './App.css';
 
 
-var arrow="<"
+var arrow = {
+  name: "Mainkandan P",
+  employeeId: 123456,
+  Appointment: "9:00 (06/03/2022)",
+  email: "manimass@gmail.com",
+  phone: +90983873468,
+  image: 'https://www.w3schools.com/howto/img_avatar.png'
+}
+var left_arrow = "<";
+var right_arrow = ">";
 function App() {
   return (
     <div className="site-container">
-    {/* Start Your code here */}
+      {/* Start Your code here */}
+      <header>
+        <div className='header-top'>
+          <p className='left arrow'>{left_arrow} </p>
+          <p><b>{arrow.name}</b></p>
+          <p>{arrow.employeeId}</p>
+        </div>
+        <button className='btn'>print</button>
+      </header>
+      <section className='customer-info'>
+        <p><b>Appointment On:</b> {arrow.Appointment}</p>
+        <p><b>Email :</b> {arrow.email}</p>
+        <p><b>Phone :</b> {arrow.phone}</p>
+      </section>
+      <section className='order-info'>
+        <div>
+          <strong>Status</strong>
+          <p className='order-info-block'><input type="radio" className='radio' />In Progress</p>
+        </div>
+        <div>
+          <strong>Door</strong>
+          <div className='order-info-block'>Mark</div>
+        </div>
+        <div>
+          <strong>Time</strong>
+          <div className='order-info-block'>10:00 (28/06/2022)</div>
+        </div>
+
+      </section>
+      <div className='product-list'>
+        <input type="checkbox" className='checkbox' />
+        <img src={arrow.image} alt="photo" />
+        <div className='para'>
+          <h1>All is well</h1>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <p className='right arrow'>{right_arrow} </p>
+
+      </div>
     </div>
   );
 }
